@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: shp-reports-api
+  jpa:
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+
+app:
+  jwt:
+    secret: "cambia-este-secreto-robusto-para-produccion"
+    expirationMinutes: 120
+
+logging:
+  level:
+    org.springframework.security: INFO
